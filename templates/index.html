@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block carousel %}
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="/static/img/slide-01.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/static/img/slide-01.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Headline</h1>
+              <p class="lead">Hello</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/static/img/slide-01.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p class="lead">Hello</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+{% endblock %}
+
+{% block content %}
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+            <div class='feature'>
+                <span class="fui-checkmark-24"></span>
+            </div>
+          <h2>From advice to complete solutions</h2>
+          <p>From web services to mobile apps, complex backend and frontend applications and API development.</p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+            <div class='feature'>
+                <span class="fui-settings-24"></span>
+            </div>
+          <h2>Systems Control</h2>
+          <p>We have a wide experience configuring servers and system based on the GNU/Linux Stack. We have made hardware projects with Arduino and the Raspberry PI.</p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+            <div class='feature'>
+                <span class="fui-bubble-24"></span>
+            </div>
+          <h2>Technology</h2>
+          <p>We use different technologies to solve different problems. From Python, Javascript...
+            We use Agile methodologies and Continuous Integration to keep our code stable and qith a good quality in order to build the thing right
+            Client is first, we provide a ticket system to get feedback from the client in order to built the right thing
+          </p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+{% endblock %}
