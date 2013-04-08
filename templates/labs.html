@@ -6,5 +6,22 @@
 {% endblock %}
 
 {% block content %}
-    LABS!
+    <div >
+        <ul id="contributions"></ul>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+        $(function() {
+            $.get('https://api.github.com/users/javaguirre/events', function(data) {
+                var target = $('#contributions');
+                var items = _.filter(data, function(elem) {
+                    return elem.type == 'PushEvent';
+                });
+                console.log(items);
+                _.each(data, function(elem) {
+                    var li = $('<li>').text(elem.actor.login + ' ' + elem.repo.name + ' ' + elem.payload.commits[0].message);
+                    target.append(li);
+                });
+            })
+        })
+    </script>
 {% endblock %}

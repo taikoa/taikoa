@@ -6,5 +6,58 @@
 {% endblock %}
 
 {% block content %}
-    Contact!
+    <div class="row-fluid">
+        <h2>Contact</h2>
+        <div class="span9 contact-block">
+            <p>
+            If you want to contract us, buy one of our services or simply you
+            have something to say to us, you can fill the following contact form,
+            and we will answer to you as soon as possible. Or you can send us
+            an email to hello AT taikoa DOT nl.
+            </p>
+        </div>
+    </div>
+    <form class="form-horizontal" method="post" action="/contact_form">
+        <div id="div_id_name" class="clearfix control-group">
+            <label for="id_name" class="control-label requiredField">
+                Name or company<span class="asteriskField">*</span></label>
+            <div class="controls">
+                <input id="id_name" type="text" name="name" maxlength="30" /><p id="hint_id_name" class="help-block">Required. from 3 to 30 chars. </p>
+            </div>
+        </div>
+        <div class="clearfix control-group">
+            <label class="control-label requiredField">
+                Your contact email<span class="asteriskField">*</span>
+            </label>
+            <div class="controls">
+                <input id="id_email" type="text" name="email" />
+                <p id="hint_id_email" class="help-block">Required.  Example: name@example.com</p>
+            </div>
+        </div>
+        <div id="div_id_subject" class="clearfix control-group">
+            <label for="id_subject" class="control-label requiredField">
+                How can we help you?<span class="asteriskField">*</span>
+                </label>
+            <div class="controls">
+                <input id="id_subject" type="text" class="textinput textInput" name="subject" maxlength="200" />
+                <p id="hint_id_subject" class="help-block">Required. from 5 to 200 chars. </p>
+            </div>
+        </div>
+        <div id="div_id_message" class="clearfix control-group">
+            <label for="id_message" class="control-label requiredField">
+                Comments<span class="asteriskField">*</span>
+            </label>
+            <div class="controls">
+                <textarea rows="10" cols="40" name="message" class="textarea"></textarea>
+                <p id="hint_id_message" class="help-block">Required. 5 chars min. </p>
+            </div>
+        </div>
+        <div class="form-actions">
+            <input type="submit"
+                   name="submit"
+                   value="Send"
+                   class="btn btn btn-success btn-large btn-block"
+                   id="submit-id-submit"
+        /></div>
+    </form>
 {% endblock %}
