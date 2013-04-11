@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash
 from flaskext.babel import Babel
 from flask.ext.mail import Mail, Message
 
@@ -41,17 +41,20 @@ def contact():
 @app.route("/contact_form", methods=['POST'])
 def contact_form():
     # FIXME Validation
+    company = request.form['company']
     subject = request.form['subject']
-    content = request.form['content']
+    content = request.form['message']
     client_email = request.form['email']
-    msg = Message(subject,
+    msg = Message('-'.join([company, subject]),
                   sender=client_email,
                   recipients=["javi@javaguirre.net"])
     msg.body = content
     mail.send(msg)
+    flash('Message sent correctly, Thank you.')
 
     return render_template('contact.html')
 
 if __name__ == "__main__":
     app.debug = True
+    app.secret_key = 'Z0Zr98j/3yX R~XHH!jmN]LWX/,?RAA'
     app.run()
