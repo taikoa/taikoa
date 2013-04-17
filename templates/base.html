@@ -44,16 +44,19 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="/">Taikoa Software</a>
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="/about">About</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/labs">Labs</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/projects">PROJECTS</a></li>
+                <li><a href="/labs">LABS</a></li>
+                <li><a href="/contact">CONTACT</a></li>
               </ul>
             </div><!--/.nav-collapse -->
+            <div class="pull-right">
+                <a class="brand" href="/">Taikoa Software</a>
+            </div>
           </div><!-- /.navbar-inner -->
         </div><!-- /.navbar -->
 
@@ -69,16 +72,32 @@
       {% endblock %}
 
       <!-- FOOTER -->
-      <hr />
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Taikoa Software, BV. &middot;</p>
-      </footer>
     </div><!-- /.container -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="span7">
+              <h3 class="footer-title">More</h3>
+              <p>This is information blabla</p>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+              <p class="pvl">
+                Hello world
+              </p>
+            </div> <!-- /span8 -->
+
+            <div class="span5">
+              <div class="footer-banner">
+                <h3 class="footer-title">Contact Us</h3>
+                <ul>
+                    <li>Visstraat 45</li>
+                    <li>Delft, The Netherlands</li>
+                    <li>hello@taikoa.net</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     <script>
       !function ($) {
         $(function(){
