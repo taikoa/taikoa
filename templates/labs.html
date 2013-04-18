@@ -6,22 +6,37 @@
 {% endblock %}
 
 {% block content %}
+    <script type="text/template" class="template">
+        <% _.each(items, function(item) { %>
+            <li>
+                <a href="https://github.com/<%= item.repo.name %>" target="_blank">
+                    <%= item.repo.name.split("/")[1] %>
+                </a>: <%= item.payload.commits[0].message %> -
+                <%= item.created_at %>
+            </li>
+         <% }); %>
+    </script>
     <div >
         <ul id="contributions"></ul>
     </div>
+
+    <div class="cleartopbar">
+    </div>
+
     <script type="text/javascript" charset="utf-8">
         $(function() {
+            // We could add more events
             $.get('https://api.github.com/users/javaguirre/events', function(data) {
                 var target = $('#contributions');
-                var items = _.filter(data, function(elem) {
+                var items = _.filter(JSON.parse(data), function(elem) {
                     return elem.type == 'PushEvent';
                 });
-                console.log(items);
-                _.each(data, function(elem) {
-                    var li = $('<li>').text(elem.actor.login + ' ' + elem.repo.name + ' ' + elem.payload.commits[0].message);
-                    target.append(li);
-                });
-            })
-        })
+                var template = _.template($('script.template').html());
+                var templateData = {
+                    items: items
+                };
+                target.append(template(templateData));
+            });
+        });
     </script>
 {% endblock %}

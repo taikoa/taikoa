@@ -47,11 +47,21 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="/">HOME</a></li>
-                <li><a href="/about">ABOUT</a></li>
-                <li><a href="/projects">PROJECTS</a></li>
-                <li><a href="/labs">LABS</a></li>
-                <li><a href="/contact">CONTACT</a></li>
+                  <li {% if active == 'home' %}class="active"{% endif %}><a href="/"
+                     >HOME</a>
+                  </li>
+                  <li {% if active == 'about' %}class="active"{% endif %}><a href="/about"
+                     >ABOUT</a>
+                  </li>
+                  <li {% if active == 'project' %}class="active"{% endif %}><a href="/projects"
+                     >PROJECTS</a>
+                 </li>
+                 <li {% if active == 'lab'%}class="active"{% endif %}><a href="/labs"
+                    >LAB</a>
+                 </li>
+                 <li {% if active == 'contact'%}class="active"{% endif %}><a href="/contact"
+                    >CONTACT</a>
+                 </li>
               </ul>
             </div><!--/.nav-collapse -->
             <div class="pull-right">
