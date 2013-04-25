@@ -7,35 +7,55 @@
 
 {% block content %}
     <div class="row">
-        <div class="span4">
-            Project description
-        </div>
-        <div class="span5 well">
-            Project photo
-        </div>
-        <div class="span4">
-            Project description
-        </div>
-        <div class="span5 well">
-            Project photo
-        </div>
-        <div class="span4">
-            Project description
-        </div>
-        <div class="span5 well">
-            Project photo
-        </div>
-        <div class="span4">
-            Project description
-        </div>
-        <div class="span5 well">
-            Project photo
-        </div>
-        <div class="span4">
-            Project description
-        </div>
-        <div class="span5 well">
-            Project photo
+        <div class="span5">
+            <form class="form-search">
+                <input type="text" placeholder="Filter projects..."
+                       class="input-large search-query">
+            </form>
         </div>
     </div>
+    <div class="row project-block">
+        <div class="span4 project">
+            <h3>wevolver</h3>
+            <div class="tech">
+                python, django, angularjs
+            </div>
+            Link:
+            Code:
+            <div class="description">
+                Wevolver es un programita que el gordo ha hecho para unos holandeses chungos.
+            </div>
+        </div>
+        <div class="span5">
+            <img src="/static/img/pam.png" />
+        </div>
+    </div>
+    <div class="row project-block">
+        <div class="span4 project">
+            <h3>wevolver</h3>
+            <div class="tech">
+                python, django, angularjs
+            </div>
+            <div class="description">
+                Wevolver es un programita que el gordo ha hecho para unos holandeses chungos.
+            </div>
+        </div>
+        <div class="span5">
+            <img src="/static/img/pam.png" />
+        </div>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+        $(function() {
+            console.log('dosabodb');
+            $('.search-query').keyup(function() {
+                if($(this).val().length > 2) {
+                    $('.tech').parent().parent().hide();
+                    $('.tech').filter(':contains(' + $(this).val() + ')').parent().parent().show();
+                }
+                else {
+                    $('.tech').parent().parent().show();
+                }
+            });
+        });
+    </script>
 {% endblock %}

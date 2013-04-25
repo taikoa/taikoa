@@ -114,7 +114,8 @@ body {
   text-align: center;
 }
 .marketing h2 {
-  font-weight: normal;
+  font-weight: bold;
+  padding-bottom: 5px;
 }
 .marketing .span4 p {
   margin-left: 10px;
@@ -282,6 +283,7 @@ body {
 footer {
     background-color: #fff;
     color: #5a5a5a;
+    padding-top: 50px;
 }
 
 .footer-banner {
@@ -304,4 +306,58 @@ footer {
 .nav .active a {
     color: #fff;
     border-bottom: 3px #fff solid;
+}
+
+.legal-numbers {
+    color: white;
+    font-weight: bold;
+}
+
+.we-do h3 {
+    color: #E74C3C;
+    font-size: 30px;
+}
+
+.we-do ul {
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+.we-do ul li {
+    margin-top: 5px;
+}
+
+.we-do ul li:before {
+    content: '>  ';
+}
+
+.we-do ul li a {
+    text-decoration: none;
+}
+
+.we-do ul li a:hover {
+    text-decoration: underline;
+    color: #1ABC9C;
+}
+
+.project-block {
+    margin-top: 35px;
+}
+
+.project h3 {
+    color: #E74C3C;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.project div.tech {
+    color: grey;
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.project div.description {
+    text-align: left;
 }
