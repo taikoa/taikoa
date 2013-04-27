@@ -3,17 +3,15 @@ import re
 from flask import Flask, render_template, request, flash, redirect
 from flaskext.babel import Babel
 from flask.ext.mail import Mail, Message
+from flask.ext.cache import Cache
 
-DEBUG = True
-SECRET_KEY = 'Z0Zr98j/3yX R~XHH!jmN]LWX/,?RAA'
 
 app = Flask(__name__)
 app.config.from_object(__name__)
-#app.config.from_pyfile('mysettings.cfg')
+app.config.from_pyfile('settings.cfg')
 babel = Babel(app)
+cache = Cache(app)
 mail = Mail(app)
-
-EMAIL ='hello@taikoa.net'
 
 
 @babel.localeselector
@@ -21,26 +19,31 @@ def get_locale():
     return request.accept_languages.best_match(['es', 'fr', 'en'])
 
 
+@cache.cached(timeout=50)
 @app.route("/")
 def index():
     return render_template('index.html', active='home')
 
 
+@cache.cached(timeout=50)
 @app.route("/projects")
 def projects():
     return render_template('projects.html', active='project')
 
 
+@cache.cached(timeout=50)
 @app.route("/about")
 def about():
     return render_template('about.html', active='about')
 
 
+@cache.cached(timeout=50)
 @app.route("/labs")
 def labs():
     return render_template('labs.html', active='lab')
 
 
+@cache.cached(timeout=50)
 @app.route("/contact")
 def contact():
     return render_template('contact.html', active='contact')
@@ -64,7 +67,7 @@ def contact_form():
 
     msg = Message('-'.join([company, subject]),
                   sender=client_email,
-                  recipients=[EMAIL])
+                  recipients=[app.config['EMAIL']])
     msg.body = content
     mail.send(msg)
     flash('Message sent correctly, Thank you.')
