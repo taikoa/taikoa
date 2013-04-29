@@ -18,12 +18,16 @@
         <div class="span4 project">
             <h3>wevolver</h3>
             <div class="tech">
-                python, django, angularjs
+                python, django, angularjs, d3js, google drive API
             </div>
-            Link:
-            Code:
+            <span>Link: http://app.wevolver.net</span>
             <div class="description">
-                Wevolver es un programita que el gordo ha hecho para unos holandeses chungos.
+                Wevolver aims to be a social networking and collaborating
+                platform for the Open Hardware/Design projects.
+            </div>
+            <div class="contribution">
+                We have built the project technically from top to bottom(except design), creating complex visualizations
+                with the d3 library and a smooth user experience with AngularJS.
             </div>
         </div>
         <div class="span5">
@@ -32,21 +36,43 @@
     </div>
     <div class="row project-block">
         <div class="span4 project">
-            <h3>wevolver</h3>
+            <h3>selltag</h3>
             <div class="tech">
-                python, django, angularjs
+                php, symfony 2, angularjs, facebook API, Twitter API
             </div>
             <div class="description">
-                Wevolver es un programita que el gordo ha hecho para unos holandeses chungos.
+                Selltag is a social network to sell physical/digital stuff. It's fully connected
+                with the social networks so you could sell to the people you trust.
+            </div>
+            <div class="contribution">
+                Creation of the technical arquitecture of the application, development of part of the backend
+                using Symfony 2 and development of the more complex Javascript parts in the app using AngularJS.
             </div>
         </div>
         <div class="span5">
             <img src="/static/img/pam.png" />
         </div>
     </div>
+    <div class="row project-block">
+        <div class="span4 project">
+            <h3>Before it...</h3>
+            <div class="description">
+                <a href="">Former experience</a>
+\cventry{November 2012 - May 2013}{Co-Founder and Software developer in Wadobo}{This is a company made of good old turing-test-passing people working together. Currently working in a social network for project management with complex javascript visualizations and integration with Google Drive. Python, Django, AngularJS and D3js}{Delft, The Netherlands}{Reference: \textit{edulix@wadobo.com}}{}
+\cventry{August 2012 - December 2012}{Lead developer at Selltag}{I was asked to help a friend in this big project, It's a place to buy and sell digital or physical articles with a strong connection with the social networks. Using PHP, Symfony 2 and AngularJS}{Delft, The Netherlands}{Reference: \textit{walter@studio.st}}{}
+\cventry{May 2011 - July 2012}{Lead developer at Gigas Hosting}{Web development and Cloud System APIs in Python and Tornado, Administration in Django, Billing backend and Frontend in PHP and jQuery. We started a Cloud Hosting Company from scratch in 4 months, our last developments are a LoadBalancer and Autoscaling for our customers}{Madrid}{Reference: \textit{walter@studio.st, jose.arribas@gigas.com}}{\textit{http://gigas.com} \textit{http://gigas.com/en/about-team.html}}
+\cventry{February 2011 - August 2011}{Partner and lead developer at Imatiiva Software}{Two partners and me started a company at part-time, but we had some differences and we ended our proffesional relationship. We developed some services in PHP, Symfony 1.4, Django and improvements for existing PHP applications}{Madrid}{Reference: \textit{juanjo.goal@gmail.com}}{}
+\cventry{January 2011 - May 2011}{Lead developer at Carlos III University Data Mining web service project}{Web development in PHP and Symfony1.4, using RaphaelJS and TimeCharts from Google, in Javascript, jQuery}{Madrid}{}{\textit{http://uc3m.es}}
+\cventry{February 2010 - January 2011}{Lead developer at Interdominios in Callejero project}{Yelp-like spanish service developed in PHP and Symfony1.4, jQuery and Google Maps API}{Madrid}{}{\textit{http://www.callejero.com}}
+\cventry{September 2010 - June 2011}{Developer and organizer of the Madrid Free Software University Contest}{\textbf{PHP and Symfony1.4}}{Madrid}{}{\textit{http://www.cuslmadrid.org}}
+\cventry{June 2008 -- June 2009}{Developer and organizer at the Spanish Free Software University Contest}{PHP, Drupal modules and jQuery}{Seville}{}{\textit{http://www.concursosoftwarelibre.org}}
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript" charset="utf-8">
         $(function() {
-            console.log('dosabodb');
+            //TODO If #tech in the url then filter by that term
             $('.search-query').keyup(function() {
                 if($(this).val().length > 2) {
                     $('.tech').parent().parent().hide();

@@ -361,3 +361,15 @@ footer {
 .project div.description {
     text-align: left;
 }
+
+#header-logo {
+    background: url("/static/img/brand.png") repeat scroll 0 0 transparent;
+    width: 324px;
+    height: 60px;
+}
+
+#header-logo:hover {
+    background: url("/static/img/brand-hover.png") repeat scroll 0 0 transparent;
+    width: 324px;
+    height: 60px;
+}
