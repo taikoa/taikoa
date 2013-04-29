@@ -38,6 +38,12 @@ def about():
 
 
 @cache.cached(timeout=50)
+@app.route("/about/me")
+def about_me():
+    return render_template('about-me.html', active='about')
+
+
+@cache.cached(timeout=50)
 @app.route("/labs")
 def labs():
     return render_template('labs.html', active='lab')
