@@ -1,0 +1,43 @@
+{
+    "timeline":
+    {
+        "headline":"Projects",
+        "type":"default",
+        "text":"Taikoa projects",
+        "startDate":"2012,03,06",
+        "date": [
+            {
+                "startDate":"2012,10,01",
+                "endDate":"2013,06,01",
+                "headline":"wevolve",
+                "text":"<p>Jarl</p>",
+                "description": "Wevolver aims to be a social networking and collaborating platform for the Open Hardware/Design projects.",
+                "tech": "python, django, angularjs, d3js, google drive API",
+                "contribution": "We have built the project technically from top to bottom(except design), creating complex visualizations with the d3 library and a smooth user experience with AngularJS.",
+                "asset":
+                {
+                    "media":"/static/img/projects/wevolve.png",
+                    "thumbnail":"/static/img/projects/wevolve.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2012,09,01",
+                "endDate":"2013,05,01",
+                "headline":"selltag",
+                "text":"<p>Jarl</p>",
+                "description": "Selltag is a social network to sell physical/digital stuff. It's fully connected with the social networks so you could sell to the people you trust.",
+                "tech": "php, symfony 2, angularjs, facebook API, Twitter API",
+                "contribution": "Creation of the technical arquitecture of the application, development of part of the backend using Symfony 2 and development of the more complex Javascript parts in the app using AngularJS.",
+                "asset":
+                {
+                    "media":"/static/img/projects/selltag.png",
+                    "thumbnail":"/static/img/projects/selltag.png",
+                    "credit":"",
+                    "caption":""
+                }
+            }
+        ]
+    }
+}
