@@ -411,3 +411,7 @@ a {
 a:hover, a:focus {
     color: #E74C3C;
 }
+
+.about h2 {
+    padding-top: 15px;
+}

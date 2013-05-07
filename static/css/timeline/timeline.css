@@ -153,6 +153,7 @@
 }
 .vco-storyjs .vco-feature h3, .vco-storyjs .vco-feature h4, .vco-storyjs .vco-feature h5, .vco-storyjs .vco-feature h6 {
     margin-bottom: 15px;
+    color: #E74C3C;
 }
 .vco-storyjs .vco-feature p {
     color: #666666;

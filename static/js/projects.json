@@ -9,15 +9,15 @@
             {
                 "startDate":"2012,10,01",
                 "endDate":"2013,06,01",
-                "headline":"wevolve",
+                "headline":"wevolver",
                 "text":"<p>Jarl</p>",
                 "description": "Wevolver aims to be a social networking and collaborating platform for the Open Hardware/Design projects.",
                 "tech": "python, django, angularjs, d3js, google drive API",
                 "contribution": "We have built the project technically from top to bottom(except design), creating complex visualizations with the d3 library and a smooth user experience with AngularJS.",
                 "asset":
                 {
-                    "media":"/static/img/projects/wevolve.png",
-                    "thumbnail":"/static/img/projects/wevolve.png",
+                    "media":"/static/img/projects/wevolver.png",
+                    "thumbnail":"/static/img/projects/wevolver.png",
                     "credit":"",
                     "caption":""
                 }
@@ -34,6 +34,102 @@
                 {
                     "media":"/static/img/projects/selltag.png",
                     "thumbnail":"/static/img/projects/selltag.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2011,10,01",
+                "endDate":"2011,11,01",
+                "headline":"ainhoabarron",
+                "text":"<p>Jarl</p>",
+                "description": "AinhoaBarron personal page, using Impress.js",
+                "tech": "Impress.js",
+                "contribution": "",
+                "asset":
+                {
+                    "media":"/static/img/projects/ainhoabarron.png",
+                    "thumbnail":"/static/img/projects/ainhoabarron.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2010,09,01",
+                "endDate":"2011,06,01",
+                "headline":"madrid free software university contest",
+                "text":"<p></p>",
+                "description": "Web application for the Free Software University Contest of Madrid",
+                "tech": "PHP, Symfony, jQuery",
+                "contribution": "Build the entire app from top to bottom",
+                "asset":
+                {
+                    "media":"/static/img/projects/cusl-madrid.png",
+                    "thumbnail":"/static/img/projects/cusl-madrid.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2010,09,01",
+                "endDate":"2011,06,01",
+                "headline":"gramophone",
+                "text":"<p></p>",
+                "description": "Streaming Music service",
+                "tech": "Python, Flask, jPlayer, Backbone",
+                "contribution": "Build the entire app from top to bottom",
+                "asset":
+                {
+                    "media":"/static/img/projects/gramophone.png",
+                    "thumbnail":"/static/img/projects/gramophone.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2012,10,01",
+                "endDate":"2013,05,01",
+                "headline":"gymself",
+                "text":"<p></p>",
+                "description": "A prototype application built with Phonegap",
+                "tech": "Phonegap, Backbone, RequireJS, jQuery, Flask",
+                "contribution": "Build the entire app from top to bottom",
+                "asset":
+                {
+                    "media":"/static/img/projects/gymself.png",
+                    "thumbnail":"/static/img/projects/gymself.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2013,04,01",
+                "endDate":"2013,04,15",
+                "headline":"patriciaguirre",
+                "text":"<p></p>",
+                "description": "Patricia Aguirre personal website",
+                "tech": "Python, Flask",
+                "contribution": "Build the entire app from top to bottom",
+                "asset":
+                {
+                    "media":"/static/img/projects/patriciaguirre.png",
+                    "thumbnail":"/static/img/projects/patriciaguirre.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2011,01,14",
+                "endDate":"2012,02,02",
+                "headline":"sabrosous",
+                "text":"<p></p>",
+                "description": "Delicious like service with social network capabilities",
+                "tech": "Python, Django, Backbone",
+                "contribution": "Build the entire app from top to bottom, design by <a href='http://twitter.com/weapp'>Manuel Albarran</a>",
+                "asset":
+                {
+                    "media":"/static/img/projects/sabrosous.png",
+                    "thumbnail":"/static/img/projects/sabrosous.png",
                     "credit":"",
                     "caption":""
                 }

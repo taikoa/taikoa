@@ -10,20 +10,20 @@
                 "startDate":"2008,06,01",
                 "endDate":"2009,06,01",
                 "headline":"Concurso Software Libre",
-                "text":"<p></p>",
+                "text":"<p>Developer and organizer at the Spanish Free Software University Contest</p>",
                 "asset":
                 {
                     "media":"/static/img/projects/cusl.png",
                     "thumbnail":"/static/img/projects/cusl.png",
                     "credit":"",
-                    "caption":""
+                    "caption":"http://concursosoftwarelibre.org"
                 }
             },
             {
                 "startDate":"2010,09,01",
                 "endDate":"2011,06,01",
                 "headline":"Concurso Software Libre Madrid",
-                "text":"<p></p>",
+                "text":"<p>Developer and organizer of the Madrid Free Software University Contest</p>",
                 "asset":
                 {
                     "media":"/static/img/projects/cusl-madrid.png",
@@ -36,20 +36,20 @@
                 "startDate":"2010,02,01",
                 "endDate":"2011,01,01",
                 "headline":"Callejero",
-                "text":"<p></p>",
+                "text":"<p>Lead developer at Interdominios in Callejero project</p><p>Yelp-like spanish service developed in PHP and Symfony1.4, jQuery and Google Maps API</p>",
                 "asset":
                 {
                     "media":"/static/img/projects/callejero.png",
                     "thumbnail":"/static/img/projects/callejero.png",
                     "credit":"",
-                    "caption":""
+                    "caption":"http://callejero.com"
                 }
             },
             {
                 "startDate":"2011,01,01",
                 "endDate":"2011,05,01",
                 "headline":"Carlos III University, Madrid",
-                "text":"<p></p>",
+                "text":"<p>Lead developer at Carlos III University Data Mining web service project</p>",
                 "asset":
                 {
                     "media":"/static/img/projects/carlosiii.png",
@@ -62,7 +62,7 @@
                 "startDate":"2011,01,01",
                 "endDate":"2011,06,01",
                 "headline":"Imatiiva",
-                "text":"<p></p>",
+                "text":"<p>Partner and lead developer at Imatiiva Software</p>",
                 "asset":
                 {
                     "media":"/static/img/projects/imatiiva.png",
@@ -75,7 +75,7 @@
                 "startDate":"2011,06,01",
                 "endDate":"2012,07,01",
                 "headline":"Gigas",
-                "text":"<p></p>",
+                "text":"<p>Head of development at Gigas Hosting</p>",
                 "asset":
                 {
                     "media":"/static/img/projects/gigas.png",
@@ -88,26 +88,26 @@
                 "startDate":"2012,07,01",
                 "endDate":"2012,11,01",
                 "headline":"Freelance",
-                "text":"<p></p>",
+                "text":"<p>Software architect</p>",
                 "asset":
                 {
                     "media":"/static/img/projects/taikoa.png",
                     "thumbnail":"/static/img/projects/taikoa.png",
                     "credit":"",
-                    "caption":""
+                    "caption":"http://taikoa.net"
                 }
             },
             {
                 "startDate":"2012,11,01",
                 "endDate":"2013,05,01",
                 "headline":"Wadobo",
-                "text":"<p></p>",
+                "text":"<p>Co-Founder and Software hacker in Wadobo</p>",
                 "asset":
                 {
                     "media":"/static/img/projects/wadobo.png",
                     "thumbnail":"/static/img/projects/wadobo.png",
                     "credit":"",
-                    "caption":""
+                    "caption":"http://wadobo.com"
                 }
             }
         ]
