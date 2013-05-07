@@ -9,25 +9,17 @@
 
     <div id="timeline-projects"></div>
 
-    <div class="row">
+    <div class="row search-filter">
         <div class="span5">
             <form class="form-search">
                 <input type="text" placeholder="Filter projects..."
                        class="input-large search-query">
+                <a href="/about/me" class="pull-right">Former experience</a>
             </form>
         </div>
     </div>
 
     <div id="projects"></div>
-
-    <div class="row project-block">
-        <div class="span4 project">
-            <h3>Before it...</h3>
-            <div class="description">
-                <a href="">Former experience</a>
-            </div>
-        </div>
-    </div>
 
     <script type="text/javascript">
         var timeline_config = {
@@ -52,16 +44,28 @@
                     <div class="tech">
                         <%- project.tech %>
                     </div>
-                    <span>Link: <%- project.caption %></span>
+                    <% if(project.caption) { %>
+                        <p class="pull-left">
+                            <a href="">
+                                <span class="fui-cmd-24"> <%- project.caption %>
+                            </a>
+                        </p>
+                    <% } %>
+                    <% if(project.source) { %>
+                        <p class="pull-left">
+                            <a href="">
+                                <span class="fui-new-24"> <%- project.source %>
+                            </a>
+                        </p>
+                    <% } %>
+                </div>
+                <div class="span5">
                     <div class="description">
                         <%- project.description %>
                     </div>
                     <div class="contribution">
                         <%- project.contribution %>
                     </div>
-                </div>
-                <div class="span5">
-                    <img src="" />
                 </div>
             </div>
         <% }); %>

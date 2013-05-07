@@ -415,3 +415,11 @@ a:hover, a:focus {
 .about h2 {
     padding-top: 15px;
 }
+
+.search-filter {
+    padding-top: 50px;
+}
+
+.contribution {
+    padding-top: 10px;
+}
