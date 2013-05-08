@@ -21,6 +21,9 @@
 
     <div id="projects"></div>
 
+{% endblock %}
+
+{% block js %}
     <script type="text/javascript">
         var timeline_config = {
             width:              '100%',
@@ -72,19 +75,6 @@
     </script>
 
     <script type="text/javascript" charset="utf-8">
-        var template = _.template($('#project-template').html());
-
-        $.get('/static/js/projects.json', function(data) {
-            var projects = data.timeline.date;
-            var templateData = {
-                projects: projects
-            };
-
-            $('#projects').append(template(templateData));
-        });
-    </script>
-
-    <script type="text/javascript" charset="utf-8">
         $(function() {
             //TODO If #tech in the url then filter by that term
             $('.search-query').keyup(function() {
@@ -96,6 +86,21 @@
                     $('.tech').parent().parent().show();
                 }
             });
+
+            var template = _.template($('#project-template').html());
+
+            $.get('/static/js/projects.json', function(data) {
+                var projects = data.timeline.date;
+                var templateData = {
+                    projects: projects
+                };
+
+                $('#projects').append(template(templateData));
+            });
+
+            //$('.media-container').magnificPopup({
+            //    type: 'image'
+            //});
         });
     </script>
 {% endblock %}

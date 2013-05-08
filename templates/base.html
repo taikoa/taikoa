@@ -7,15 +7,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Le styles -->
+    <!-- styles -->
     <link rel="shortcut icon" href="/static/favicon.ico">
     <link href="/static/css/bootstrap.css" rel="stylesheet">
     <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="/static/css/flat-ui.css" rel="stylesheet">
+    <link href="/static/css/magnific-popup.css">
     <link href="/static/css/main.css" rel="stylesheet">
-    <script src="/static/js/jquery.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/underscore.min.js"></script>
+    <!-- END styles -->
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -101,9 +100,9 @@
             <div class="span3 we-do">
               <h3 class="footer-title"><strong>technologies</strong></h3>
               <ul>
-                  <li><a href="/projects/#python">python</a></li>
-                  <li><a href="/projects/#django">django</a></li>
-                  <li><a href="/projects/#javascript">javascript</a></li>
+                  <li><a href="/projects#python">python</a></li>
+                  <li><a href="/projects#django">django</a></li>
+                  <li><a href="/projects#javascript">javascript</a></li>
                   <li><a href="/projects/">firefox os</a></li>
                   <li><a href="/projects">more...</a></li>
               </ul>
@@ -113,10 +112,10 @@
               <div class="footer-banner">
                   <h3 class="footer-title">contact us</h3>
                 <ul>
-                    <!--<li><i class="icon-map-marker icon-white"></i>&nbsp;Visstraat 45, 2611 JW, Delft, The Netherlands</li>
-                    <li><span class="legal-numbers">Kvk</span> 04824093184&nbsp;&nbsp;&nbsp;
+                    <li><i class="icon-map-marker icon-white"></i>&nbsp;Visstraat 45, 2611 JW, Delft, The Netherlands</li>
+                    <li><span class="legal-numbers">Kvk</span> 57890161&nbsp;&nbsp;&nbsp;
                         <span class="legal-numbers">|</span>
-                         &nbsp;&nbsp;&nbsp;<span class="legal-numbers">BTW</span> 000000000000</li>-->
+                         &nbsp;&nbsp;&nbsp;<span class="legal-numbers">BTW</span> NL432712240B01</li>
                     <li><i class="icon-envelope icon-white"></i>&nbsp;&nbsp;<a href="mailto:hello@taikoa.net">hello@taikoa.net</a></li>
                     <li class="pull-right"><a href="http://twitter.com/taikoasoft"><img src="/static/img/twitter.png" /></a></li>
                 </ul>
@@ -128,13 +127,24 @@
           </div>
         </div>
       </footer>
+
+    <!-- Javascripts -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/underscore.min.js"></script>
+    <script src="/static/js/jquery.magnific-popup.js"></script>
+    <!-- END javascripts -->
     <script>
       !function ($) {
         $(function(){
-          $('#myCarousel').carousel()
+          $('#myCarousel').carousel();
         })
       }(window.jQuery)
     </script>
     <script src="/static/js/holder.js"></script>
+
+    {% block js %}
+    {% endblock %}
+
   </body>
 </html>
