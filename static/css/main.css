@@ -423,3 +423,11 @@ a:hover, a:focus {
 .contribution {
     padding-top: 10px;
 }
+
+.home-posts {
+    padding-top: 100px;
+}
+
+#post {
+    font-size: 20px;
+}
