@@ -61,7 +61,7 @@
                 "text":"<p>Web application for the Free Software University Contest of Madrid</p><p>Build the entire app from top to bottom</p>",
                 "description": "Web application for the Free Software University Contest of Madrid",
                 "tech": "PHP, Symfony, jQuery",
-                "contribution": "Build the entire app from top to bottom",
+                "contribution": "Build the entire app",
                 "asset":
                 {
                     "media":"/static/img/projects/cusl-madrid.png",
@@ -77,7 +77,7 @@
                 "text":"<p>Streaming Music service</p><p>Build the entire app from top to bottom</p><span class='fui-cmd-24'></span> <a href='http://gramophonetaikoa.net'>http://gramophone.taikoa.net</a>",
                 "description": "Streaming Music service",
                 "tech": "Python, Flask, jPlayer, Backbone",
-                "contribution": "Build the entire app from top to bottom",
+                "contribution": "Build the entire app",
                 "asset":
                 {
                     "media":"/static/img/projects/gramophone.png",
@@ -93,7 +93,7 @@
                 "text":"<p>A prototype application built with Phonegap</p><p>Build the entire app from top to bottom</p>",
                 "description": "A prototype application built with Phonegap",
                 "tech": "Phonegap, Backbone, RequireJS, jQuery, Flask",
-                "contribution": "Build the entire app from top to bottom",
+                "contribution": "Build the entire app",
                 "asset":
                 {
                     "media":"/static/img/projects/gymself.png",
