@@ -166,6 +166,15 @@ body {
         height: 30px !important;
         margin-top: 20px;
     }
+    .contact-footer {
+        padding-left: 10px !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    .contact-footer {
+        padding-left: 10px !important;
+    }
 }
 
 @media (max-width: 1035px) {
@@ -178,6 +187,10 @@ body {
 
   .navbar-wrapper {
       padding-top: 10px;
+  }
+
+  .contact-footer {
+      padding-left: 10px !important;
   }
 
   .container.navbar-wrapper {
@@ -194,7 +207,7 @@ body {
   }
   .carousel img {
     width: auto;
-    height: 500px;
+    height: 300px;
   }
 
   .featurette {
