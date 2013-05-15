@@ -439,6 +439,10 @@ a:hover, a:focus {
     padding-top: 10px;
 }
 
+.posts {
+    list-style-type: none;
+}
+
 .home-posts {
     padding-top: 100px;
 }
