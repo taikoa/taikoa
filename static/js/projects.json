@@ -10,10 +10,10 @@
                 "startDate":"2012,10,01",
                 "endDate":"2013,06,01",
                 "headline":"wevolver",
-                "text":"<p>Wevolver aims to be a social networking and collaborating platform for the Open Hardware/Design projects.</p> <p>We have built the project technically from top to bottom(except design), creating complex visualizations with the d3 library and a smooth user experience with AngularJS.</p><span class='fui-cmd-24'></span> <a href='http://app.wevolver.net'>http://app.wevolver.net</a>",
+                "text":"<span class='label label-info'>In progress</span><br /><p>Wevolver aims to be a social networking and collaborating platform for the Open Hardware/Design projects.</p> <p>We build the project technically from top to bottom(except design), creating complex visualizations with the d3 library and a smooth user experience with AngularJS.</p><span class='fui-cmd-24'></span> <a href='http://app.wevolver.net'>http://app.wevolver.net</a>",
                 "description": "Wevolver aims to be a social networking and collaborating platform for the Open Hardware/Design projects.",
                 "tech": "python, django, angularjs, d3js, google drive API",
-                "contribution": "We have built the project technically except design, creating complex visualizations with the d3 library and a smooth user experience with AngularJS.",
+                "contribution": "We build the project technically except design, creating complex visualizations with the d3 library and a smooth user experience with AngularJS.",
                 "asset":
                 {
                     "media":"/static/img/projects/wevolver.png",
@@ -26,7 +26,7 @@
                 "startDate":"2012,09,01",
                 "endDate":"2013,05,01",
                 "headline":"selltag",
-                "text":"<p>Selltag is a social network to sell physical/digital stuff. It's fully connected with the social networks so you could sell to the people you trust.</p><p>Creation of the technical arquitecture of the application, development of part of the backend using Symfony 2 and development of the more complex Javascript parts in the app using AngularJS.</p><span class='fui-cmd-24'></span> <a href='http://selltag.com'>http://selltag.com</a>",
+                "text":"<span class='label label-info'>In progress</span><br /><p>Selltag is a social network to sell physical/digital stuff. It's fully connected with the social networks so you could sell to the people you trust.</p><p>Creation of the technical arquitecture of the application, development of part of the backend using Symfony 2 and development of the more complex Javascript parts in the app using AngularJS.</p><span class='fui-cmd-24'></span> <a href='http://selltag.com'>http://selltag.com</a>",
                 "description": "Selltag is a social network to sell physical/digital stuff. It's fully connected with the social networks so you could sell to the people you trust.",
                 "tech": "php, symfony 2, angularjs, facebook API, Twitter API",
                 "contribution": "Creation of the technical arquitecture of the application, development of part of the backend using Symfony 2 and development of the more complex Javascript parts in the app using AngularJS.",
@@ -71,8 +71,8 @@
                 }
             },
             {
-                "startDate":"2010,09,01",
-                "endDate":"2011,06,01",
+                "startDate":"2012,12,01",
+                "endDate":"2013,02,01",
                 "headline":"gramophone",
                 "text":"<p>Streaming Music service</p><span class='fui-cmd-24'></span> <a href='http://gramophonetaikoa.net'>http://gramophone.taikoa.net</a><br /><span class='fui-cmd-24'></span> <a href='https://github.com/javaguirre/gramophone'>https://github.com/javaguirre/gramophone</a>",
                 "description": "Streaming Music service",
@@ -106,7 +106,7 @@
                 "startDate":"2013,04,01",
                 "endDate":"2013,04,15",
                 "headline":"patriciaguirre",
-                "text":"<p>Patricia Aguirre personal website</p><span class='fui-cmd-24'></span> <a href='http://patriciaguirre.com'>http://patriciaguirre.com</a>",
+                "text":"<span class='label label-info'>In progress</span><br /><p>Patricia Aguirre personal website</p><span class='fui-cmd-24'></span> <a href='http://patriciaguirre.com'>http://patriciaguirre.com</a>",
                 "description": "Patricia Aguirre personal website",
                 "tech": "Python, Flask",
                 "contribution": "",
