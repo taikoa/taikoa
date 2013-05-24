@@ -441,6 +441,11 @@ a:hover, a:focus {
 
 .posts {
     list-style-type: none;
+    font-size: 22px;
+}
+
+.posts li {
+    padding-bottom: 3px;
 }
 
 .home-posts {
