@@ -42,6 +42,13 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" charset="utf-8">
+        $(function() {
+            if(window.screen.availWidth < 600) {
+                $('.carousel-inner .item img').attr('src', '/static/img/slide-04.png');
+            }
+        });
+    </script>
 {% endblock %}
 
 {% block content %}
