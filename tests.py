@@ -1,11 +1,14 @@
 import unittest
 
+from flask.ext.mail import Mail
+
 import taikoa
 
 
-class FlaskrTestCase(unittest.TestCase):
+class TaikoaTestCase(unittest.TestCase):
     def setUp(self):
         taikoa.app.config['TESTING'] = True
+        taikoa.mail = Mail(taikoa.app)
         self.app = taikoa.app.test_client()
 
     def tearDown(self):

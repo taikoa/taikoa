@@ -7,7 +7,6 @@ from flask.ext.cache import Cache
 
 
 app = Flask(__name__)
-app.config.from_object(__name__)
 app.config.from_pyfile('settings.cfg')
 babel = Babel(app)
 cache = Cache(app)
