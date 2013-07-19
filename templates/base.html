@@ -77,8 +77,11 @@
     {% block carousel %}
     {% endblock %}
 
-    <div class="container">
+    <div class="container {% block text_content%}container-p{% endblock %}">
       {% include 'messages.html' %}
+
+      <div class="cleartopbar">
+      </div>
 
       {% block content %}
       {% endblock %}

@@ -43,12 +43,6 @@ def about_me():
 
 
 @cache.cached(timeout=50)
-@app.route("/labs")
-def labs():
-    return render_template('labs.html', active='lab')
-
-
-@cache.cached(timeout=50)
 @app.route("/contact")
 def contact():
     return render_template('contact.html', active='contact')

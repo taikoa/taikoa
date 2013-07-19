@@ -1,55 +1,43 @@
 {% extends 'base.html' %}
 
-{% block carousel %}
-    <!-- Carousel
-    ================================================== -->
-    <div class="container">
-        <div class="row">
-            <div class="span13">
-                <div id="myCarousel" class="carousel slide">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <img src="/static/img/slide-01.png" alt="">
-                      <div class="container">
-                        <div class="carousel-caption">
-                          <h1>Building software is like magic</h1>
-                          <p class="lead">We provide web, mobile, and desktop software solutions</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="/static/img/slide-02.png" alt="">
-                      <div class="container">
-                        <div class="carousel-caption">
-                          <h1>It's all about design</h1>
-                          <p class="lead">We build beautiful applications using our wide experience in design and frontend technologies</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="/static/img/slide-03.png" alt="">
-                      <div class="container">
-                        <div class="carousel-caption">
-                          <h1>Quality and stability</h1>
-                          <p class="lead">The quality of our software is key, we have our own test and continuous integration environment to keep it</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                  <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-                </div><!-- /.carousel -->
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript" charset="utf-8">
-        $(function() {
-            if(window.screen.availWidth < 600) {
-                $('.carousel-inner .item img').attr('src', '/static/img/slide-04.png');
-            }
-        });
-    </script>
-{% endblock %}
+
+{% block text_content %}{% endblock %}
 
 {% block content %}
+    <div class="row">
+        <div class="span4">
+            <div class='feature'>
+                <span class="fui-checkmark-24"></span>
+            </div>
+
+            <h2>Software solutions</h2>
+
+            <p>From web services to mobile apps, complex backend, frontend applications or API development.
+            We have always a positive solution</p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+            <div class='feature'>
+                <span class="fui-menu-24"></span>
+            </div>
+
+            <h2>Systems Control</h2>
+
+            <p>We have a wide experience configuring servers and systems based on GNU/Linux. We are very comfortable with tools like NGINX, memcached, MySQL, MongoDB
+            among others</p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+            <div class='feature'>
+                <span class="fui-settings-24"></span>
+            </div>
+
+            <h2>Technology</h2>
+
+            <p>We use different technologies to solve different problems, using Continuous Integration to keep our code stable and
+            with quality in order to build the thing right.
+            </p>
+            <p>
+            Client is first, we provide a ticket system to get feedback from the client in order to built the right thing
+            </p>
+        </div><!-- /.span4 -->
+    </div><!-- /.row -->
 {% endblock %}
