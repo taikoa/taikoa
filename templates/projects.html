@@ -1,68 +1,55 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <h1>
+        <form class="form-search form-inline">
+            Projects&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="search for python..."
+                   class="input-large search-query">
+        </form>
+    </h1>
 
-    <div id="timeline-projects"></div>
-
-    <div class="row search-filter">
-        <div class="span5">
-            <form class="form-search">
-                <input type="text" placeholder="python"
-                       class="input-large search-query">
-                <a href="/about/me" class="pull-right">Former experience</a>
-            </form>
-        </div>
-    </div>
+    <hr />
 
     <div id="projects"></div>
 
 {% endblock %}
 
 {% block js %}
-    <script type="text/javascript">
-        var timeline_config = {
-            width:              '100%',
-            height:             '600',
-            source:             '/static/js/projects.json',
-            embed_id:           'timeline-projects',
-            start_at_end:       false,
-            hash_bookmark:      true,
-            css:                '/static/css/timeline/timeline.css',
-            js:                 '/static/js/timeline-min.js'
-        };
-    </script>
-
-    <script type="text/javascript" src="/static/js/storyjs-embed.js"></script>
-
     <script type="text/template" charset="utf-8" id="project-template">
         <% _.each(projects, function(project) { %>
-            <div class="row project-block">
-                <div class="span4 project">
-                    <h3><%- project.headline %></h3>
-                    <div class="tech">
-                        <%- project.tech %>
+            <div class="project-block">
+                <div class="row">
+                    <div class="span4 project">
+                        <a name="<%- project.headline %>"></a>
+                        <h3><%- project.headline %></h3>
+                        <div class="tech">
+                            <%- project.tech %>
+                        </div>
                     </div>
-                    <% if(project.caption) { %>
-                        <p class="pull-left">
-                            <a href="">
-                                <span class="fui-cmd-24"> <%- project.caption %>
-                            </a>
-                        </p>
-                    <% } %>
-                    <% if(project.source) { %>
-                        <p class="pull-left">
-                            <a href="">
-                                <span class="fui-new-24"> <%- project.source %>
-                            </a>
-                        </p>
-                    <% } %>
                 </div>
-                <div class="span5">
-                    <div class="description">
-                        <%- project.description %>
+                <div class="row">
+                    <div class="span4 project-image">
+                        <a data-lightbox="taikoa" href="<%- project.asset.media %>">
+                            <img class="image-link" src="<%- project.asset.media %>" />
+                        </a>
                     </div>
-                    <div class="contribution">
-                        <%- project.contribution %>
+                    <div class="span5 project-desc">
+                        <div class="description">
+                            <%- project.description %>
+                        </div>
+                        <div class="contribution">
+                            <%- project.contribution %>
+                        </div>
+                        <div class="project-links">
+                            <% if(project.site) { %>
+                                <span class='fui-cmd-24'></span> <a href='<%- project.site %>'><%- project.site %></a>
+                            <% } %>
+                            <br />
+                            <% if(project.code) { %>
+                                <span class='fui-cmd-24'></span> <a href='<%- project.code %>'><%- project.code %></a>
+                            <% } %>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,14 +58,13 @@
 
     <script type="text/javascript" charset="utf-8">
         $(function() {
-            //TODO If #tech in the url then filter by that term
             $('.search-query').keyup(function() {
                 if($(this).val().length > 2) {
-                    $('.tech').parent().parent().hide();
-                    $('.tech').filter(':contains(' + $(this).val() + ')').parent().parent().show();
+                    $('.tech').parent().parent().parent().hide();
+                    $('.tech').filter(':contains(' + $(this).val() + ')').parent().parent().parent().show();
                 }
                 else {
-                    $('.tech').parent().parent().show();
+                    $('.tech').parent().parent().parent().show();
                 }
             });
 
@@ -92,10 +78,6 @@
 
                 $('#projects').append(template(templateData));
             });
-
-            //$('.media-container').magnificPopup({
-            //    type: 'image'
-            //});
         });
     </script>
 {% endblock %}

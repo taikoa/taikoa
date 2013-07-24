@@ -4,15 +4,17 @@
 {% block text_content %}{% endblock %}
 
 {% block content %}
-    <div class="row">
+    <div id="timeline-projects"></div>
+
+    <div class="row features">
         <div class="span4">
-            <div class='feature'>
+            <div class="feature">
                 <span class="fui-checkmark-24"></span>
             </div>
 
             <h2>Software solutions</h2>
 
-            <p>From web services to mobile apps, complex backend, frontend applications or API development.
+            <p>From <strong>web services</strong> to mobile apps, complex backend, frontend applications or API development.
             We have always a positive solution</p>
         </div><!-- /.span4 -->
         <div class="span4">
@@ -22,8 +24,9 @@
 
             <h2>Systems Control</h2>
 
-            <p>We have a wide experience configuring servers and systems based on GNU/Linux. We are very comfortable with tools like NGINX, memcached, MySQL, MongoDB
-            among others</p>
+            <p>We have a wide experience configuring servers and systems based on GNU/Linux.
+                We use <strong>NGINX</strong>, <strong>MySQL</strong>, <strong>memcached</strong>, <strong>MongoDB</strong> among others
+            </p>
         </div><!-- /.span4 -->
         <div class="span4">
             <div class='feature'>
@@ -32,12 +35,26 @@
 
             <h2>Technology</h2>
 
-            <p>We use different technologies to solve different problems, using Continuous Integration to keep our code stable and
-            with quality in order to build the thing right.
-            </p>
             <p>
-            Client is first, we provide a ticket system to get feedback from the client in order to built the right thing
+            Different technologies to solve different problems, using <strong>Continuous Integration</strong> and testing
+            to keep the quality of the code.
             </p>
         </div><!-- /.span4 -->
     </div><!-- /.row -->
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        var timeline_config = {
+            width:              '100%',
+            height:             '600',
+            source:             '/static/js/projects.json',
+            embed_id:           'timeline-projects',
+            start_at_end:       false,
+            hash_bookmark:      true,
+            css:                '/static/css/timeline/timeline.css',
+            js:                 '/static/js/timeline-min.js'
+        };
+    </script>
+    <script type="text/javascript" src="/static/js/storyjs-embed.js"></script>
 {% endblock %}
