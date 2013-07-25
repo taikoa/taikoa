@@ -21,7 +21,7 @@
             <div class="project-block">
                 <div class="row">
                     <div class="span4 project">
-                        <a name="<%- project.headline %>"></a>
+                        <a name="#<%- project.headline %>"></a>
                         <h3><%- project.headline %></h3>
                         <div class="tech">
                             <%- project.tech %>
@@ -75,8 +75,15 @@
                 var templateData = {
                     projects: projects
                 };
+                var hash = window.location.hash;
 
                 $('#projects').append(template(templateData));
+
+                if(hash) {
+                    $('html, body').animate({
+                        scrollTop: $('a[name="' + hash + '"]').offset().top
+                    });
+                }
             });
         });
     </script>
