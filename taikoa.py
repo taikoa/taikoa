@@ -5,6 +5,7 @@ from flaskext.babel import Babel
 from flask.ext.mail import Mail, Message
 from flask.ext.cache import Cache
 from flask.ext.assets import Environment
+from raven.contrib.flask import Sentry
 
 
 app = Flask(__name__)
@@ -13,6 +14,7 @@ babel = Babel(app)
 cache = Cache(app)
 mail = Mail(app)
 assets = Environment(app)
+sentry = Sentry(app)
 
 
 @babel.localeselector
