@@ -4,6 +4,7 @@ from flask import Flask, render_template, request, flash, redirect
 from flaskext.babel import Babel
 from flask.ext.mail import Mail, Message
 from flask.ext.cache import Cache
+from flask.ext.assets import Environment
 
 
 app = Flask(__name__)
@@ -11,6 +12,7 @@ app.config.from_pyfile('settings.cfg')
 babel = Babel(app)
 cache = Cache(app)
 mail = Mail(app)
+assets = Environment(app)
 
 
 @babel.localeselector
