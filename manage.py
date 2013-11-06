@@ -21,8 +21,8 @@ class CreateThumbnails(Command):
             filepath = os.path.join(PROJECT_IMAGE_FOLDER, f)
             if os.path.isfile(filepath):
                 print('Creating thumbnail for %s' % f)
-                thumb.thumbnail(filepath, '370x197')
-                thumb.thumbnail(filepath, '24x24')
+                thumb.thumbnail(filepath, '370x197', crop='fit')
+                thumb.thumbnail(filepath, '24x24', crop='fit')
 
 if __name__ == '__main__':
     manager.add_command('create_thumbnails', CreateThumbnails())
