@@ -58,18 +58,22 @@
 
     <script type="text/javascript" charset="utf-8">
         $(function() {
+            //Search project function
             $('.search-query').keyup(function() {
+                var $tech = $('.tech').parent().parent().parent();
+
                 if($(this).val().length > 2) {
-                    $('.tech').parent().parent().parent().hide();
+                    $tech.hide();
                     $('.tech').filter(':contains(' + $(this).val() + ')').parent().parent().parent().show();
                 }
                 else {
-                    $('.tech').parent().parent().parent().show();
+                    $tech.show();
                 }
             });
 
             var template = _.template($('#project-template').html());
 
+            // load project list
             $.get('/static/js/projects.json', function(data) {
                 var projects = data.timeline.date;
                 var templateData = {
