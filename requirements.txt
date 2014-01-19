@@ -15,3 +15,4 @@ wsgiref==0.1.2
 raven==3.5.0
 yuicompressor==2.4.8
 git+https://github.com/javaguirre/flask-thumbnails.git
+Fabric==1.8.1
