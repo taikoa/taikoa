@@ -1,0 +1,525 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  /* margin-top: 20px; */
+  margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+.navbar-wrapper .navbar {
+
+}
+
+/* Remove border and change up box shadow for more contrast */
+.navbar .navbar-inner {
+  border: 0;
+}
+
+/* Downsize the brand/project name a bit */
+.navbar .brand {
+  padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+
+/* Navbar links: increase padding for taller navbar */
+.navbar .nav > li > a {
+  padding: 15px 20px;
+}
+
+/* Offset the responsive button for proper vertical alignment */
+.navbar .btn-navbar {
+  margin-top: 30px;
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 0px;
+  margin-top: 120px;
+}
+
+.carousel .container {
+  position: relative;
+  z-index: 9;
+}
+
+.carousel-control {
+  height: 80px;
+  margin-top: 0;
+  font-size: 120px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  background-color: transparent;
+  border: 0;
+  z-index: 10;
+  text-decoration: none;
+}
+
+.carousel .item {
+  height: 300px;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 300px;
+}
+
+.carousel-caption {
+  background-color: transparent;
+  position: static;
+  max-width: 550px;
+  padding: 0 20px;
+  margin-top: 100px;
+  padding-left: 50px;
+}
+.carousel-caption h1,
+.carousel-caption .lead {
+  margin: 0;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn {
+  margin-top: 10px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .span4 {
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.marketing .span4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+  padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (max-width: 400px) {
+    #header-logo {
+        background: url("/static/img/brand-small.png") no-repeat scroll 0 0 transparent !important;
+        width: 162px !important;
+        height: 30px !important;
+        margin-top: 20px;
+    }
+    .contact-footer {
+        padding-left: 10px !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    .contact-footer {
+        padding-left: 10px !important;
+    }
+}
+
+@media (max-width: 1035px) {
+    .nav li a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 979px) {
+
+  .navbar-wrapper {
+      padding-top: 10px;
+  }
+
+  .contact-footer {
+      padding-left: 10px !important;
+  }
+
+  .container.navbar-wrapper {
+    margin-bottom: 0;
+    width: auto;
+  }
+  .navbar-inner {
+    border-radius: 0;
+    margin: -20px 0;
+  }
+
+  .carousel .item {
+    height: 500px;
+  }
+  .carousel img {
+    width: auto;
+    height: 300px;
+  }
+
+  .featurette {
+    height: auto;
+    padding: 0;
+  }
+  .featurette-image.pull-left,
+  .featurette-image.pull-right {
+    display: block;
+    float: none;
+    max-width: 40%;
+    margin: 0 auto 20px;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  .navbar-inner {
+    margin: -20px;
+  }
+
+  .carousel {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .carousel .container {
+
+  }
+  .carousel .item {
+    height: 300px;
+  }
+  .carousel img {
+    height: 300px;
+  }
+  .carousel-caption {
+    width: 65%;
+    padding: 0 70px;
+    margin-top: 100px;
+  }
+  .carousel-caption h1 {
+    font-size: 30px;
+  }
+  .carousel-caption .lead,
+  .carousel-caption .btn {
+    font-size: 18px;
+  }
+
+  .marketing .span4 + .span4 {
+    margin-top: 40px;
+  }
+
+  .featurette-heading {
+    font-size: 30px;
+  }
+  .featurette .lead {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .image-link {
+    width: 500px;
+  }
+  .search-query {
+      padding: 0 !important;
+      width: 20%;
+  }
+}
+
+.feature {
+  background: none repeat scroll 0% 0% #e74c3c;
+  border: 8px solid #e74c3c;
+  padding: 40px;
+  font-size: 64px;
+  display: inline-block;
+  color: white;
+  border: 8px solid;
+  transition: all 0.2s ease-out 0s;
+  list-style: none outside none;
+}
+
+.feature:hover {
+  color: #e74c3c;
+  background: none repeat scroll 0% 0% rgb(255, 255, 255);
+}
+
+.cleartopbar {
+    padding-top: 150px;
+}
+
+.cleartopbar-small {
+    padding-top: 100px;
+}
+
+.navbar-wrapper .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+  width: 100%;
+}
+
+.navbar-inner {
+  border-radius: 0px;
+  height: 90px;
+}
+
+.navbar .nav > li > a:hover {
+    color: #fff;
+    border-bottom: 3px #fff solid;
+}
+
+.navbar {
+    font-size: 25px;
+}
+
+.nav {
+    top: 36px;
+}
+
+footer {
+    background-color: #fff;
+    color: #5a5a5a;
+    padding-top: 30px;
+}
+
+.footer-banner {
+    min-height: 0px;
+}
+
+.form-actions {
+    border-top: 0;
+    background-color: transparent;
+}
+
+.btn.btn-success {
+    background-color: #e74c3c;
+}
+
+.btn.btn-success:hover {
+    background-color: #1abc9c;
+}
+
+.nav .active a {
+    color: #fff;
+    border-bottom: 3px #fff solid;
+}
+
+.legal-numbers {
+    color: white;
+    font-weight: bold;
+}
+
+.we-do h3 {
+    color: #E74C3C;
+    font-size: 30px;
+}
+
+.we-do ul {
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+.we-do ul li {
+    margin-top: 5px;
+}
+
+.we-do ul li:before {
+    content: '>  ';
+}
+
+.we-do ul li a {
+    text-decoration: none;
+}
+
+.we-do ul li a:hover {
+    text-decoration: underline;
+    color: #E74C3C;
+}
+
+.project-block {
+    margin-top: 35px;
+}
+
+.project h3 {
+    color: #E74C3C;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.project div.tech {
+    color: grey;
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.project div.description {
+    text-align: left;
+}
+
+#header-logo {
+    background: url("/static/img/brand.png") no-repeat scroll 0 0 transparent;
+    width: 324px;
+    height: 60px;
+}
+
+#header-logo:hover {
+    background: url("/static/img/brand-hover.png") no-repeat scroll 0 0 transparent;
+    width: 324px;
+    height: 60px;
+}
+
+.nav-collapse.in.collapse {
+    background-color: #E74C3C;
+}
+
+.navbar .nav-collapse .nav > .active > a {
+    color: white;
+}
+
+.nav-collapse .nav {
+    margin: 0 0 30px;
+}
+
+a {
+    color: #1ABC9C;
+}
+
+a:hover, a:focus {
+    color: #E74C3C;
+}
+
+.about h2 {
+    padding-top: 15px;
+}
+
+.search-filter {
+    padding-top: 50px;
+}
+
+.contribution {
+    padding-top: 10px;
+}
+
+.posts {
+    list-style-type: none;
+    font-size: 22px;
+}
+
+.posts li {
+    padding-bottom: 3px;
+}
+
+.home-posts {
+    padding-top: 150px;
+}
+
+#post {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#post ul li {
+    line-height: 30px;
+}
+
+.contact-footer {
+    padding-left: 100px;
+}
+
+pre {
+    background-color: transparent;
+}
+
+.lab-posts {
+    line-height: 1.8;
+    padding-bottom: 80px;
+}
+
+#contributions {
+    line-height: 1.8;
+}
+
+#tag-cloud {
+    padding-bottom: 80px;
+}
+
+.navbar-wrapper {
+    z-index: 500;
+}
+
+.well {
+    background-color: none;
+    border: none;
+    box-shadow: none;
+}
+
+.features {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.features .span4 {
+    text-align: center;
+}
+
+.project-links {
+    font-size: 0.9em;
+    padding-top: 30px;
+}
+
+.project-image {
+    padding-top: 20px;
+}
+
+.project-desc {
+    padding-top: 20px;
+}

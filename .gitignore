@@ -1,3 +1,6 @@
 env/
 .sw[op]?
 *.pyc
+static/.webassets-cache/
+static/gen/
+static/img/project_thumbs/

@@ -1,0 +1,144 @@
+{
+    "timeline":
+    {
+        "headline":"Software development",
+        "type":"default",
+        "text":"Providing web and mobile software solutions with open source.<br/><br/>Check out the latest projects ->",
+        "startDate":"2013,01,01",
+        "date": [
+            {
+                "startDate":"2013,01,01",
+                "endDate":"2013,07,01",
+                "headline":"wevolver",
+                "text":"<span class='label label-success'>development</span><br /><p>Wevolver aims to be a social networking and collaborating platform for the Open Hardware/Design projects.</p> <span class='fui-cmd-24'></span> <a href='/projects#wevolver'>More</a>",
+                "description": "Wevolver aims to be a social networking and collaborating platform for the Open Hardware/Design projects. We build the project technically from top to bottom(except design), creating complex visualizations with the d3 library and a smooth user experience with AngularJS.",
+                "tech": "python, django, angularjs, d3js, google drive API",
+                "contribution": "We build the project technically except design, creating complex visualizations with the d3 library and a smooth user experience with AngularJS.",
+                "site": "http://app.wevolver.net",
+                "code": "https://github.com/taikoa/wevolver-server",
+                "asset":
+                {
+                    "media":"/static/img/project_thumbs/wevolver_370x197_fit_100.png",
+                    "thumbnail":"/static/img/project_thumbs/wevolver_24x24_fit_100.png",
+                    "original":"/static/img/projects/wevolver.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2012,09,01",
+                "endDate":"2014,05,01",
+                "headline":"selltag",
+                "text":"<span class='label label-success'>development</span><br /><p>Selltag is a social network to sell physical/digital stuff. It's fully connected with the social networks so you could sell to the people you trust.</p> <span class='fui-cmd-24'></span> <a href='/projects#selltag'>More</a>",
+                "description": "Selltag is a social network to sell physical/digital stuff. It's fully connected with the social networks so you could sell to the people you trust. Creation of the technical arquitecture of the application, development of part of the backend using Symfony 2 and development of the more complex Javascript parts in the app using AngularJS.",
+                "tech": "php, symfony 2, angularjs, facebook API, Twitter API, varnish",
+                "contribution": "Creation of the technical arquitecture of the application, development of part of the backend using Symfony 2 and development of the more complex Javascript parts in the app using AngularJS.",
+                "site": "http://selltag.com",
+                "code": "",
+                "asset":
+                {
+                    "media":"/static/img/project_thumbs/selltag_370x197_fit_100.png",
+                    "thumbnail":"/static/img/project_thumbs/selltag_24x24_fit_100.png",
+                    "original":"/static/img/projects/selltag.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2012,12,01",
+                "endDate":"2013,02,01",
+                "headline":"gramophone",
+                "text":"<span class='label label-success'>development</span>&nbsp;<span class='label label-info'>design</span>&nbsp;<span class='label label-warning'>open source</span><p>Streaming Music service</p> <span class='fui-cmd-24'></span> <a href='/projects#gramophone'>More</a>",
+                "description": "Streaming Music service",
+                "tech": "Python, Flask, jPlayer, Backbone",
+                "contribution": "",
+                "site": "http://gramophone.javaguirre.net",
+                "code": "https://github.com/javaguirre/gramophone",
+                "asset":
+                {
+                    "media":"/static/img/project_thumbs/gramophone_370x197_fit_100.png",
+                    "thumbnail":"/static/img/project_thumbs/gramophone_24x24_fit_100.png",
+                    "original":"/static/img/projects/gramophone.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2013,06,01",
+                "endDate":"2013,10,20",
+                "headline":"citee",
+                "text":"<span class='label label-success'>development</span><p>Meetup clone with a subscription model</p> <span class='fui-cmd-24'></span> <a href='/projects#citee'>More</a>",
+                "description": "Meetup clone with a subscription model",
+                "tech": "Python, Django, jQuery, Celery",
+                "contribution": "Backend and frontend development",
+                "site": "http://citee.nl",
+                "code": "",
+                "asset":
+                {
+                    "media":"/static/img/project_thumbs/citee_370x197_fit_100.png",
+                    "thumbnail":"/static/img/project_thumbs/citee_24x24_fit_100.png",
+                    "original":"/static/img/projects/citee.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2013,11,01",
+                "endDate":"2013,12,31",
+                "headline":"sanoma",
+                "text":"<span class='label label-success'>development</span><p>Contributing in their content platform, translation module, drupal development</p> <span class='fui-cmd-24'></span> <a href='/projects#sanoma'>More</a>",
+                "description": "Contributing in their content platform, translation module, drupal development",
+                "tech": "Python, Django, Apache Solr, jQuery, PHP, Drupal",
+                "contribution": "API integration, Solr configuration, Drupal and Django development",
+                "site": "http://sanoma.nl",
+                "code": "",
+                "asset":
+                {
+                    "media":"/static/img/project_thumbs/sanoma_370x197_fit_100.png",
+                    "thumbnail":"/static/img/project_thumbs/sanoma_24x24_fit_100.png",
+                    "original":"/static/img/projects/sanoma.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2013,10,25",
+                "endDate":"2014,01,30",
+                "headline":"antonia_reif",
+                "text":"<span class='label label-success'>development</span>&nbsp;<span class='label label-info'>design</span><p>Antonia Reif Architecture website</p> <span class='fui-cmd-24'></span> <a href='/projects#antonia_reif'>More</a>",
+                "description": "Antonia Reif Architecture website",
+                "tech": "Python, Django, less, nginx",
+                "contribution": "Full development and administration of the application",
+                "site": "http://antoniareif.com",
+                "code": "",
+                "asset":
+                {
+                    "media":"/static/img/project_thumbs/antonia_reif_370x197_fit_100.png",
+                    "thumbnail":"/static/img/project_thumbs/antonia_reif_24x24_fit_100.png",
+                    "original":"/static/img/projects/antonia_reif.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2014,01,01",
+                "endDate":"2014,10,01",
+                "headline":"qiqaboo",
+                "text":"<span class='label label-danger'>construction</span>&nbsp;<span class='label label-success'>development</span>&nbsp;<span class='label label-warning'>design</span><p>With our platform for monetizing valuable content not previously exploited, we offer the greatest thing yet; free tv and films on any device. Content owners can use our platform to capitalize on their work and at the same time deliver the best experience possible to the viewer without pay walling. This is the only platform that lets content creators meet the piracy problem head on and come out on top.</p> <span class='fui-cmd-24'></span> <a href='/projects#qiqaboo'>More</a>",
+                "description": "With our platform for monetizing valuable content not previously exploited, we offer the greatest thing yet; free tv and films on any device. Content owners can use our platform to capitalize on their work and at the same time deliver the best experience possible to the viewer without pay walling. This is the only platform that lets content creators meet the piracy problem head on and come out on top. ",
+                "tech": "Python, Django, Postgresql, AngularJS, celery, redis",
+                "contribution": "Co-founding the project as technical partner",
+                "site": "http://qiqaboo.com",
+                "code": "",
+                "asset":
+                {
+                    "media":"/static/img/project_thumbs/qiqaboo_370x197_fit_100.png",
+                    "thumbnail":"/static/img/project_thumbs/qiqaboo_24x24_fit_100.png",
+                    "original":"/static/img/projects/qiqaboo.png",
+                    "credit":"",
+                    "caption":""
+                }
+            }
+        ]
+    }
+}

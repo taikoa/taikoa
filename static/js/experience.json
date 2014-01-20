@@ -1,0 +1,115 @@
+{
+    "timeline":
+    {
+        "headline":"Experience",
+        "type":"default",
+        "text":"Taikoa projects and experience before it",
+        "startDate":"2008,03,06",
+        "date": [
+            {
+                "startDate":"2008,06,01",
+                "endDate":"2009,06,01",
+                "headline":"Concurso Software Libre",
+                "text":"<p>Developer and organizer at the Spanish Free Software University Contest</p>",
+                "asset":
+                {
+                    "media":"/static/img/project_thumbs/cusl_370x197_fit_100.png",
+                    "thumbnail":"/static/img/project_thumbs/cusl_24x24_fit_100.png",
+                    "credit":"",
+                    "caption":"http://concursosoftwarelibre.org"
+                }
+            },
+            {
+                "startDate":"2010,09,01",
+                "endDate":"2011,06,01",
+                "headline":"Concurso Software Libre Madrid",
+                "text":"<p>Developer and organizer of the Madrid Free Software University Contest</p>",
+                "asset":
+                {
+                    "media":"/static/img/project_thumbs/cusl-madrid_370x197_fit_100.png",
+                    "thumbnail":"/static/img/project_thumbs/cusl-madrid_24x24_fit_100.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2010,02,01",
+                "endDate":"2011,01,01",
+                "headline":"Callejero",
+                "text":"<p>Lead developer at Interdominios in Callejero project</p><p>Yelp-like spanish service developed in PHP and Symfony1.4, jQuery and Google Maps API</p>",
+                "asset":
+                {
+                    "media":"/static/img/project_thumbs/callejero_370x197_fit_100.png",
+                    "thumbnail":"/static/img/project_thumbs/callejero_24x24_fit_100.png",
+                    "credit":"",
+                    "caption":"http://callejero.com"
+                }
+            },
+            {
+                "startDate":"2011,01,01",
+                "endDate":"2011,05,01",
+                "headline":"Carlos III University, Madrid",
+                "text":"<p>Lead developer at Carlos III University Data Mining web service project</p>",
+                "asset":
+                {
+                    "media":"/static/img/project_thumbs/carlosiii_370x197_fit_100.png",
+                    "thumbnail":"/static/img/project_thumbs/carlosiii_24x24_fit_100.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2011,01,01",
+                "endDate":"2011,06,01",
+                "headline":"Imatiiva",
+                "text":"<p>Partner and lead developer at Imatiiva Software</p>",
+                "asset":
+                {
+                    "media":"/static/img/project_thumbs/imatiiva_370x197_fit_100.png",
+                    "thumbnail":"/static/img/project_thumbs/imatiiva_24x24_fit_100.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2011,06,01",
+                "endDate":"2012,07,01",
+                "headline":"Gigas",
+                "text":"<p>Head of development at Gigas Hosting</p>",
+                "asset":
+                {
+                    "media":"/static/img/project_thumbs/gigas_370x197_fit_100.png",
+                    "thumbnail":"/static/img/project_thumbs/gigas_24x24_fit_100.png",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2012,07,01",
+                "endDate":"2013,05,01",
+                "headline":"Wadobo",
+                "text":"<p>Co-Founder and full stack software developer in Wadobo</p>",
+                "asset":
+                {
+                    "media":"/static/img/project_thumbs/wadobo_370x197_fit_100.png",
+                    "thumbnail":"/static/img/project_thumbs/wadobo_24x24_fit_100.png",
+                    "credit":"",
+                    "caption":"http://wadobo.com"
+                }
+            },
+            {
+                "startDate":"2013,05,01",
+                "endDate":"2020,01,01",
+                "headline":"Taikoa Software",
+                "text":"<p>Full stack software developer</p>",
+                "asset":
+                {
+                    "media":"/static/img/project_thumbs/taikoa_370x197_fit_100.png",
+                    "thumbnail":"/static/img/project_thumbs/taikoa_24x24_fit_100.png",
+                    "credit":"",
+                    "caption":"http://taikoa.net"
+                }
+            }
+        ]
+    }
+}
