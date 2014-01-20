@@ -1,4 +1,5 @@
 import re
+import time
 
 from flask import Flask, render_template, request, flash, redirect
 from flaskext.babel import Babel
@@ -6,6 +7,7 @@ from flask.ext.mail import Mail, Message
 from flask.ext.cache import Cache
 from flask.ext.assets import Environment
 from raven.contrib.flask import Sentry
+import feedparser
 
 
 app = Flask(__name__)
@@ -50,6 +52,19 @@ def about_me():
 @app.route("/contact")
 def contact():
     return render_template('contact.html', active='contact')
+
+
+@cache.cached(timeout=50)
+@app.route("/lab")
+def lab():
+    feed = feedparser.parse('http://javaguirre.net/rss/')
+    items = feed['items']
+
+    for item in items:
+        item['published_parsed'] = time.strftime("%d %B %Y",
+                                                 item['published_parsed'])
+
+    return render_template('lab.html', active='lab', items=items)
 
 
 @app.route("/contact_form", methods=['POST'])

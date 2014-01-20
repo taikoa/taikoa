@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+
+{% block text_content %}{% endblock %}
+
+{% block content %}
+    <div id="home">
+        <h1>Lab</h1>
+
+        <hr />
+
+        <div class="lab-posts span12">
+            {% for item in items %}
+                <div class="row">
+                    <div class="span2">{{ item.published_parsed }}</div>
+                    <div class="span6"><a target="_blank" href="{{ item.link }}">{{ item.title }}</a></div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <hr />
+
+        <h2>Contributions</h3>
+        <div class="span12" id="contributions"></div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="/static/js/moment.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/template" class="template">
+        <% _.each(items, function(item) { %>
+            <div class="row">
+                <div class="span3">
+                    <%= item.created_at %>
+                </div>
+                <div class="span3">
+                    <a href="https://github.com/<%= item.repo.name %>" target="_blank">
+                        <%= item.repo_name %>
+                    </a>
+                </div>
+                <div class="span5 small">
+                    <%= item.message %>
+                </div>
+            </div>
+         <% }); %>
+
+         <div class="row show-more-contribs">
+             <div class="span3">
+                 <a href="#more">Show more</a>
+             </div>
+         </div>
+
+         <div class="row">
+             <div class="span3">
+                 <a href="https://github.com/taikoa" target="_blank">More at Github</a>
+             </div>
+         </div>
+    </script>
+
+    <script type="text/javascript" charset="utf-8">
+        $(function() {
+            var filter_it = function(data) {
+                return _.filter(data, function(elem) {
+                    return elem.type == 'PushEvent' && elem.payload.commits.length > 0;
+                });
+            };
+
+            var build_data = function(items) {
+                var target = $('#contributions');
+                var template = _.template($('script.template').html());
+                items = _.sortBy(items, function(elem) {
+                    return -(new Date(elem.created_at).getTime());
+                });
+                for(var i = 0; i< items.length; i++) {
+                    var date_aux = moment(items[i].created_at);
+                    items[i].created_at = date_aux.format('Do MMMM YYYY');
+                    items[i].repo_name = items[i].repo.name.split("/")[1];
+                    items[i].message = items[i].payload.commits[0].message;
+                }
+                var templateData = {
+                    items: items
+                };
+                target.append(template(templateData));
+            };
+
+            $.get('https://api.github.com/users/javaguirre/events', function(data) {
+                var items = filter_it(data);
+                var contrib_items = $('#contributions');
+                build_data(items);
+                contrib_items.children()
+                    .filter(function(index) {
+                        return index > 5;
+                    })
+                    .hide();
+                contrib_items.children('.show-more-contribs')
+                    .show()
+                    .click(function() {
+                        contrib_items.children().show();
+                        $(this).hide();
+                    });
+            });
+        });
+    </script>
+{% endblock %}
