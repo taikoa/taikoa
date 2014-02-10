@@ -155,127 +155,6 @@ body {
   letter-spacing: -1px;
 }
 
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-@media (max-width: 400px) {
-    #header-logo {
-        background: url("/static/img/brand-small.png") no-repeat scroll 0 0 transparent !important;
-        width: 162px !important;
-        height: 30px !important;
-        margin-top: 20px;
-    }
-    .contact-footer {
-        padding-left: 10px !important;
-    }
-}
-
-@media (max-width: 1300px) {
-    .contact-footer {
-        padding-left: 10px !important;
-    }
-}
-
-@media (max-width: 1035px) {
-    .nav li a {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 979px) {
-
-  .navbar-wrapper {
-      padding-top: 10px;
-  }
-
-  .contact-footer {
-      padding-left: 10px !important;
-  }
-
-  .container.navbar-wrapper {
-    margin-bottom: 0;
-    width: auto;
-  }
-  .navbar-inner {
-    border-radius: 0;
-    margin: -20px 0;
-  }
-
-  .carousel .item {
-    height: 500px;
-  }
-  .carousel img {
-    width: auto;
-    height: 300px;
-  }
-
-  .featurette {
-    height: auto;
-    padding: 0;
-  }
-  .featurette-image.pull-left,
-  .featurette-image.pull-right {
-    display: block;
-    float: none;
-    max-width: 40%;
-    margin: 0 auto 20px;
-  }
-}
-
-
-@media (max-width: 767px) {
-
-  .navbar-inner {
-    margin: -20px;
-  }
-
-  .carousel {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
-  .carousel .container {
-
-  }
-  .carousel .item {
-    height: 300px;
-  }
-  .carousel img {
-    height: 300px;
-  }
-  .carousel-caption {
-    width: 65%;
-    padding: 0 70px;
-    margin-top: 100px;
-  }
-  .carousel-caption h1 {
-    font-size: 30px;
-  }
-  .carousel-caption .lead,
-  .carousel-caption .btn {
-    font-size: 18px;
-  }
-
-  .marketing .span4 + .span4 {
-    margin-top: 40px;
-  }
-
-  .featurette-heading {
-    font-size: 30px;
-  }
-  .featurette .lead {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  .image-link {
-    width: 500px;
-  }
-  .search-query {
-      padding: 0 !important;
-      width: 20%;
-  }
-}
-
 .feature {
   background: none repeat scroll 0% 0% #e74c3c;
   border: 8px solid #e74c3c;
@@ -522,4 +401,150 @@ pre {
 
 .project-desc {
     padding-top: 20px;
+}
+
+.big h1 {
+    text-transform: uppercase;
+    font-size: 200px;
+    line-height: 0.8em;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (max-width: 1300px) {
+    .contact-footer {
+        padding-left: 10px !important;
+    }
+}
+
+@media (max-width: 1035px) {
+    .nav li a {
+        font-size: 20px;
+    }
+
+    .big h1 {
+        font-size: 150px;
+    }
+}
+
+@media (max-width: 979px) {
+  .navbar-wrapper {
+      padding-top: 10px;
+  }
+
+  .contact-footer {
+      padding-left: 10px !important;
+  }
+
+  .container.navbar-wrapper {
+    margin-bottom: 0;
+    width: auto;
+  }
+  .navbar-inner {
+    border-radius: 0;
+    margin: -20px 0;
+  }
+
+  .carousel .item {
+    height: 500px;
+  }
+
+  .carousel img {
+    width: auto;
+    height: 300px;
+  }
+
+  .featurette {
+    height: auto;
+    padding: 0;
+  }
+  .featurette-image.pull-left,
+  .featurette-image.pull-right {
+    display: block;
+    float: none;
+    max-width: 40%;
+    margin: 0 auto 20px;
+  }
+
+  .big h1 {
+      font-size: 140px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-inner {
+    margin: -20px;
+  }
+
+  .carousel {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .carousel .container {
+
+  }
+  .carousel .item {
+    height: 300px;
+  }
+  .carousel img {
+    height: 300px;
+  }
+  .carousel-caption {
+    width: 65%;
+    padding: 0 70px;
+    margin-top: 100px;
+  }
+  .carousel-caption h1 {
+    font-size: 30px;
+  }
+  .carousel-caption .lead,
+  .carousel-caption .btn {
+    font-size: 18px;
+  }
+
+  .marketing .span4 + .span4 {
+    margin-top: 40px;
+  }
+
+  .featurette-heading {
+    font-size: 30px;
+  }
+  .featurette .lead {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .image-link {
+    width: 500px;
+  }
+  .search-query {
+      padding: 0 !important;
+      width: 20%;
+  }
+
+  .big h1 {
+      font-size: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .big h1 {
+      font-size: 70px;
+  }
+}
+
+@media (max-width: 400px) {
+    #header-logo {
+        background: url("/static/img/brand-small.png") no-repeat scroll 0 0 transparent !important;
+        width: 162px !important;
+        height: 30px !important;
+        margin-top: 20px;
+    }
+    .contact-footer {
+        padding-left: 10px !important;
+    }
+
+    .big h1 {
+        font-size: 60px;
+    }
 }

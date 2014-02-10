@@ -37,12 +37,6 @@ def projects():
 
 
 @cache.cached(timeout=50)
-@app.route("/about")
-def about():
-    return render_template('about.html', active='about')
-
-
-@cache.cached(timeout=50)
 @app.route("/about/me")
 def about_me():
     return render_template('about-me.html', active='about')
@@ -93,4 +87,4 @@ def contact_form():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
