@@ -1,20 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div id="timeline-projects"></div>
+    <div class="container">
+        <h1>
+            <form class="form-search form-inline">
+                Projects&nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="search for python..."
+                       class="input-large search-query">
+            </form>
+        </h1>
 
-    <h1>
-        <form class="form-search form-inline">
-            Projects&nbsp;&nbsp;&nbsp;
-            <input type="text" placeholder="search for python..."
-                   class="input-large search-query">
-        </form>
-    </h1>
+        <hr />
 
-    <hr />
+        <div id="timeline-projects"></div>
 
-    <div id="projects"></div>
-
+        <div id="projects"></div>
+    </div>
 {% endblock %}
 
 {% block js %}
@@ -87,6 +88,16 @@
                 }
             });
 
+            $('#timeline-projects').on('click', 'a:contains("More")', function() {
+                var hash = $(this).attr('href');
+
+                if(hash) {
+                    $('html, body').animate({
+                        scrollTop: $('a[name="' + hash + '"]').offset().top
+                    });
+                }
+            });
+
             var template = _.template($('#project-template').html());
 
             // load project list
@@ -95,15 +106,8 @@
                 var templateData = {
                     projects: projects
                 };
-                var hash = window.location.hash;
 
                 $('#projects').append(template(templateData));
-
-                if(hash) {
-                    $('html, body').animate({
-                        scrollTop: $('a[name="' + hash + '"]').offset().top
-                    });
-                }
             });
         });
     </script>
