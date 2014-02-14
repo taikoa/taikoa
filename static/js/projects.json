@@ -14,7 +14,7 @@
                 "description": "Wevolver aims to be a social networking and collaborating platform for the Open Hardware/Design projects. We build the project technically from top to bottom(except design), creating complex visualizations with the d3 library and a smooth user experience with AngularJS.",
                 "tech": "python, django, angularjs, d3js, google drive API",
                 "contribution": "We build the project technically except design, creating complex visualizations with the d3 library and a smooth user experience with AngularJS.",
-                "site": "http://app.wevolver.net",
+                "site": "http://wevolver.net",
                 "code": "https://github.com/taikoa/wevolver-server",
                 "asset":
                 {
@@ -52,7 +52,7 @@
                 "description": "Streaming Music service",
                 "tech": "Python, Flask, jPlayer, Backbone",
                 "contribution": "",
-                "site": "http://gramophone.javaguirre.net",
+                "site": "",
                 "code": "https://github.com/javaguirre/gramophone",
                 "asset":
                 {
@@ -124,7 +124,7 @@
                 "startDate":"2014,01,01",
                 "endDate":"2014,10,01",
                 "headline":"qiqaboo",
-                "text":"<span class='label label-danger'>construction</span>&nbsp;<span class='label label-success'>development</span>&nbsp;<span class='label label-warning'>design</span><p>With our platform for monetizing valuable content not previously exploited, we offer the greatest thing yet; free tv and films on any device. Content owners can use our platform to capitalize on their work and at the same time deliver the best experience possible to the viewer without pay walling. This is the only platform that lets content creators meet the piracy problem head on and come out on top.</p> <span class='fui-cmd-24'></span> <a href='#qiqaboo'>More</a>",
+                "text":"<span class='label label-success'>development</span>&nbsp;<span class='label label-warning'>design</span><p>With our platform for monetizing valuable content not previously exploited, we offer the greatest thing yet; free tv and films on any device. Content owners can use our platform to capitalize on their work and at the same time deliver the best experience possible to the viewer without pay walling. This is the only platform that lets content creators meet the piracy problem head on and come out on top.</p> <span class='fui-cmd-24'></span> <a href='#qiqaboo'>More</a>",
                 "description": "With our platform for monetizing valuable content not previously exploited, we offer the greatest thing yet; free tv and films on any device. Content owners can use our platform to capitalize on their work and at the same time deliver the best experience possible to the viewer without pay walling. This is the only platform that lets content creators meet the piracy problem head on and come out on top. ",
                 "tech": "Python, Django, Postgresql, AngularJS, celery, redis",
                 "contribution": "Co-founding the project as technical partner",

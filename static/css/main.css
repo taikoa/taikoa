@@ -210,6 +210,11 @@ a:hover, a:focus {
     color: #E74C3C;
 }
 
+.about {
+    text-align: center;
+    padding-bottom: 90px;
+}
+
 .about h2 {
     padding-top: 15px;
 }
@@ -315,7 +320,7 @@ pre {
 }
 
 #wrapper2 {
-    background-color: #E74C3C;
+    background-color: #5a5a5a;
     width: 100%;
     color: white;
 }
