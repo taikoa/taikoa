@@ -96,10 +96,13 @@ body {
     top: 36px;
 }
 
+.projects {
+    padding-bottom: 30px;
+}
+
 footer {
-    background-color: #fff;
+    background-color: #1abc9c;
     color: #5a5a5a;
-    padding-top: 30px;
 }
 
 .footer-banner {
@@ -373,6 +376,11 @@ pre {
 }
 
 @media (max-width: 767px) {
+  body {
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+
   .navbar-inner {
     margin: -20px;
   }
