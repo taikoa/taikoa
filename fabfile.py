@@ -24,12 +24,6 @@ def git_pull():
         run('git pull origin master')
 
 
-def git_submodule():
-    """Updates the submodules."""
-    with cd(env.root):
-        run('git submodule update')
-
-
 def restart_daemon():
     with cd(env.root):
         run("sudo supervisorctl restart %s" % env.gunicorn)
@@ -39,7 +33,5 @@ def deploy():
     """Run the actual deployment steps: $ fab prod deploy"""
     with cd(env.root):
         git_pull()
-        git_submodule()
         virtualenv("pip install -r %s/requirements.txt" % env.root)
-        virtualenv("python manage.py create_thumbnails")
     restart_daemon()
